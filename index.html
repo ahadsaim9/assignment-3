@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-lato">
+    <!-- navbar -->
     <header
       class="container md:w-[80%] mx-auto p-3 mt-12 bg-[#F85559] rounded-full"
     >
@@ -71,7 +72,7 @@
       </div>
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="/images/banner1.png" class="w-full" />
+          <img src="images/banner1.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -80,7 +81,7 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="/images/banner2.png" class="w-full" />
+          <img src="images/banner2.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -89,7 +90,7 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="/images/banner3.png" class="w-full" />
+          <img src="images/banner3.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -98,7 +99,7 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="/images/banner4.png" class="w-full" />
+          <img src="images/banner4.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -168,11 +169,13 @@
       </div>
       <!-- product Box -->
 
-      <section class="product-box grid md:grid-cols-2 xl:grid-cols-4 gap-5 sm:grid-rows-1 mt-10 ">
+      <section
+        class="product-box grid md:grid-cols-2 xl:grid-cols-4 gap-5 sm:grid-rows-1 mt-10"
+      >
         <section class="">
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl " />
+              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -185,7 +188,9 @@
                 <i class="bi bi-star"></i>
               </p>
               <div class="card-actions">
-                <button class="" onclick="my_modal_1.showModal()">Details</button>
+                <button class="" onclick="my_modal_1.showModal()">
+                  Details
+                </button>
               </div>
             </div>
           </div>
@@ -193,7 +198,7 @@
         <section class="">
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -206,7 +211,9 @@
                 <i class="bi bi-star"></i>
               </p>
               <div class="card-actions">
-                <button class="" onclick="my_modal_2.showModal()">Details</button>
+                <button class="" onclick="my_modal_2.showModal()">
+                  Details
+                </button>
               </div>
             </div>
           </div>
@@ -214,7 +221,7 @@
         <section class="">
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -227,7 +234,9 @@
                 <i class="bi bi-star"></i>
               </p>
               <div class="card-actions">
-                <button class="" onclick="my_modal_3.showModal()">Details</button>
+                <button class="" onclick="my_modal_3.showModal()">
+                  Details
+                </button>
               </div>
             </div>
           </div>
@@ -235,7 +244,7 @@
         <section class="">
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -248,7 +257,9 @@
                 <i class="bi bi-star"></i>
               </p>
               <div class="card-actions">
-                <button class="" onclick="my_modal_4.showModal()">Details</button>
+                <button class="" onclick="my_modal_4.showModal()">
+                  Details
+                </button>
               </div>
             </div>
           </div>
@@ -256,49 +267,65 @@
       </section>
       <!------------------------- modal section ------------------------>
       <!-- Open the modal using ID.showModal() method -->
-<!-- modal-1 -->
-<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle justify-center ">
-  <form method="dialog" class="modal-box">
-    <div class="modal-action">
-        <div class="card bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl " />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h1>Apples</h1>
-              <p class="pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-              <p class="text-orange-600">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-              </p>
-              <div class="card-actions">
-               
+      <!-- modal-1 -->
+      <dialog
+        id="my_modal_1"
+        class="modal modal-bottom sm:modal-middle justify-center"
+      >
+        <form method="dialog" class="modal-box">
+          <div class="modal-action">
+            <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h1>Apples</h1>
+                <p class="pt-2">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+                <p class="text-orange-600">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </p>
+                <div class="card-actions"></div>
+              </div>
+              <!-- if there is a button in form, it will close the modal -->
+              <div class="flex gap-3 p-4">
+                <button
+                  class="btn bg-orange-400 text-white hover:bg-green-600 hover:text-white"
+                >
+                  By Now
+                </button>
+                <button class="btn hover:bg-orange-400 hover:text-white">
+                  Close
+                </button>
               </div>
             </div>
-      <!-- if there is a button in form, it will close the modal -->
-      <div class="flex gap-3 p-4">
-        <button class="btn bg-orange-400 text-white  hover:bg-green-600 hover:text-white ">By Now </button>
-        <button class="btn  hover:bg-orange-400 hover:text-white  ">Close</button>
-     </div>
-    </div>
-  </form>
-</dialog>
-<!-- modal-2 -->
+          </div>
+        </form>
+      </dialog>
+      <!-- modal-2 -->
 
-<dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle justify-center ">
-    <form method="dialog" class="modal-box">
-      <div class="modal-action">
-          <div class="card bg-base-100 shadow-xl">
+      <dialog
+        id="my_modal_2"
+        class="modal modal-bottom sm:modal-middle justify-center"
+      >
+        <form method="dialog" class="modal-box">
+          <div class="modal-action">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl " />
+                <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
-               
                 <h1 class="text-2xl">Orange</h1>
-                <p class="pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="pt-2">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
                 <p class="text-orange-600">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
@@ -306,31 +333,41 @@
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                 </p>
-                <div class="card-actions">
-                 
-                </div>
+                <div class="card-actions"></div>
               </div>
-        <!-- if there is a button in form, it will close the modal -->
-        <div class="flex gap-3 p-4">
-            <button class="btn bg-orange-400 text-white  hover:bg-green-600 hover:text-white ">By Now </button>
-            <button class="btn  hover:bg-orange-400 hover:text-white  ">Close</button>
-         </div>
-      </div>
-    </form>
-  </dialog>
-  <!-- modal-3 -->
-  
-<dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle justify-center ">
-    <form method="dialog" class="modal-box">
-      <div class="modal-action">
-          <div class="card bg-base-100 shadow-xl">
+              <!-- if there is a button in form, it will close the modal -->
+              <div class="flex gap-3 p-4">
+                <button
+                  class="btn bg-orange-400 text-white hover:bg-green-600 hover:text-white"
+                >
+                  By Now
+                </button>
+                <button class="btn hover:bg-orange-400 hover:text-white">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dialog>
+      <!-- modal-3 -->
+
+      <dialog
+        id="my_modal_3"
+        class="modal modal-bottom sm:modal-middle justify-center"
+      >
+        <form method="dialog" class="modal-box">
+          <div class="modal-action">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl " />
+                <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
-             
                 <h1 class="text-2xl">Red Dragon</h1>
-                <p class="pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="pt-2">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
                 <p class="text-orange-600">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
@@ -338,31 +375,41 @@
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                 </p>
-                <div class="card-actions">
-                 
-                </div>
+                <div class="card-actions"></div>
               </div>
-        <!-- if there is a button in form, it will close the modal -->
-        <div class="flex gap-3 p-4">
-            <button class="btn bg-orange-400 text-white  hover:bg-green-600 hover:text-white ">By Now </button>
-            <button class="btn  hover:bg-orange-400 hover:text-white  ">Close</button>
-         </div>
-      </div>
-    </form>
-  </dialog>
-  <!-- modal-4 -->
-  
-<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle justify-center ">
-    <form method="dialog" class="modal-box">
-      <div class="modal-action">
-          <div class="card bg-base-100 shadow-xl">
+              <!-- if there is a button in form, it will close the modal -->
+              <div class="flex gap-3 p-4">
+                <button
+                  class="btn bg-orange-400 text-white hover:bg-green-600 hover:text-white"
+                >
+                  By Now
+                </button>
+                <button class="btn hover:bg-orange-400 hover:text-white">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dialog>
+      <!-- modal-4 -->
+
+      <dialog
+        id="my_modal_4"
+        class="modal modal-bottom sm:modal-middle justify-center"
+      >
+        <form method="dialog" class="modal-box">
+          <div class="modal-action">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
-                <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl " />
+                <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center">
-                
                 <h1 class="text-2xl">Banana</h1>
-                <p class="pt-2">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <p class="pt-2">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
                 <p class="text-orange-600">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
@@ -370,21 +417,28 @@
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                 </p>
-                <div class="card-actions">
-                </div>
+                <div class="card-actions"></div>
               </div>
-        <!-- if there is a button in form, it will close the modal -->
-       <div class="flex gap-3 p-4">
-          <button class="btn bg-orange-400 text-white  hover:bg-green-600 hover:text-white ">By Now </button>
-          <button class="btn  hover:bg-orange-400 hover:text-white  ">Close</button>
-       </div>
-      </div>
-    </form>
-  </dialog>
-  <section class="shop-all flex justify-center w[to-100%] my-16">
-    <button class="btn bg-[#F85559] text-white hover:bg-green-700" >Shop All</button>
-  </section>
+              <!-- if there is a button in form, it will close the modal -->
+              <div class="flex gap-3 p-4">
+                <button
+                  class="btn bg-orange-400 text-white hover:bg-green-600 hover:text-white"
+                >
+                  By Now
+                </button>
+                <button class="btn hover:bg-orange-400 hover:text-white">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dialog>
+      <section class="shop-all flex justify-center w[to-100%] my-16">
+        <button class="btn bg-[#F85559] text-white hover:bg-green-700">
+          Shop All
+        </button>
+      </section>
     </main>
-   
   </body>
 </html>
