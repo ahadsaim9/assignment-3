@@ -1,3 +1,17 @@
 .font-lato {
   font-family: "Lato", sans-serif;
 }
+
+.section-3{
+    width: 100%;
+    border-radius: 8px;
+    background-image: url(images/banner1.png);
+    background-color: rgb(23, 19, 19);
+    background-blend-mode: overlay;
+}
+@media screen and(max-width: 768px) {
+    .section-3{
+        height: 100vh;
+    }
+    
+}
